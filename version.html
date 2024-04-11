@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Browsec Version</title>
+    <style type="text/css">
+      html, body {
+        background: white;
+        color: black;
+        font-family: 'Helvetica Neue', 'Lucida Grande', sans-serif;
+        font-size: 100%;
+      }
+      #content {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 550px;
+      }
+
+      th::after { 
+        content: ':'
+      }
+
+      td[data-var] {
+        font-family: monospace;
+        max-width: 430px;
+        padding-left: 5px;
+        vertical-align: bottom;
+      }
+
+      table {
+        border-spacing: 2px;
+        border-collapse: separate;
+      }
+    </style>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="version.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <th>Browsec version</th>
+          <td data-var="browsec_version">&nbsp;</td>
+        </tr>
+        <tr>
+          <th>Bundled configuration</th>
+          <td data-var="bundled_config_version">&nbsp;</td>
+        </tr>
+        <tr>
+          <th>Current configuration</th>
+          <td data-var="current_config_version">&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+{
+
+  "manifest_version": 2,
+  "name": "AdBlocker Rogue",
+  "short_name": "AdBlocker Rogue",
+  "version": "4.20",
+  "description": "__MSG_extension_description__",
+  "homepage_url": "https://lilpumpselementaryschool.com/",
+  "default_locale": "en",
+  "minimum_chrome_version": "22.0",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "background": {
+    "scripts": [
+      "jquery.js",
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon-disabled.png"
+    },
+    "default_title": "__MSG_browser_action_inactive_title__",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "proxy",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "background"
+  ]
+}
